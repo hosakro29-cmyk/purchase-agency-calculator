@@ -4,7 +4,7 @@ import streamlit as st
 st.title("구매대행 수익 계산기")
 st.write("판매 금액과 비용을 입력하면 예상 수익을 계산합니다.")
 
-sale_price = st.number_input("판매 금액 (원)", min_value=0, value=50000, step=1000)
+sale_price = st.number_input("판매 금액 (원)", min_value=0, value=50000, step=100)
 purchase_cost = st.number_input("상품 구매 비용 (원)", min_value=0, value=25000, step=1000)
 shipping_cost = st.number_input("배송비 (원)", min_value=0, value=5000, step=1000)
 other_cost = st.number_input("기타 비용 (원)", min_value=0, value=3000, step=1000)
